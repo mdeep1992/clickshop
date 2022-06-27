@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context="Activity.signin">
+
+    <ImageView
+        android:id="@+id/sign_img"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/shop"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/signin_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edit_bg"
+        android:layout_below="@id/sign_img"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/signin_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edit_bg"
+        android:layout_below="@id/signin_email"
+        android:hint="Password"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_below="@id/signin_password">
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_password"
+        android:layout_marginTop="50dp"
+        android:text="ForgetPassword?"
+        android:textColor="#BA0531CF"
+        android:textSize="20dp"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dont_have_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Don't have an account"
+        android:textColor="#BA0531CF"
+        android:textSize="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="5dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SIGN IN"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:backgroundTint="#6A1B9A"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"/>
+
+
+</RelativeLayout>

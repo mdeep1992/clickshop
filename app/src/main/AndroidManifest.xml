@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clickshop">
+
+    <application
+        android:name=".MApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Clickshop">
+        <activity
+            android:name=".ActCart"
+            android:exported="false" />
+        <activity
+            android:name="Activity.ProductView"
+            android:exported="false" />
+        <activity
+            android:name="Activity.signup"
+            android:exported="false"
+            android:label="@string/title_activity_signup"
+            android:theme="@style/Theme.Clickshop.NoActionBar" />
+        <activity
+            android:name="Activity.signin"
+            android:exported="false" />
+        <activity
+            android:name="Activity.splashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

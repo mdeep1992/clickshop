@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.ProductView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#F3ECEC"
+        android:id="@+id/panel"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUR PRODUCTS"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="60dp"
+            android:textSize="20dp"/>
+        <FrameLayout
+            android:id="@+id/cart_frame"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_marginStart="100dp" >
+            <ImageView
+                android:id="@+id/cart_img_btn"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_shopping_cart_24"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_below="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
