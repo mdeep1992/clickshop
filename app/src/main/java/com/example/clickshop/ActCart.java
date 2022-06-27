@@ -16,11 +16,12 @@ public class ActCart extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_cart);
+        getSupportActionBar().hide();
 
         RecyclerView recyclerView = findViewById(R.id.recycler_cart);
         GridLayoutManager gridLayoutManager=new GridLayoutManager(this,2,GridLayoutManager.VERTICAL,true);
         recyclerView.setLayoutManager(gridLayoutManager);
-        ProductAdapter adapter = new ProductAdapter(getCartList(),this);
+        CartAdapter adapter = new CartAdapter(getCartList(),this);
         recyclerView.setAdapter(adapter);
 
 
